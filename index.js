@@ -4,7 +4,7 @@ import {name as appName} from './app.json';
 
 import StorybookApp from './storybook';
 
-const isPreviewingStorybook = true;
+const isPreviewingStorybook = false;
 const AppToRegister = isPreviewingStorybook ? StorybookApp : App;
 
 AppRegistry.registerComponent(appName, () => AppToRegister);
